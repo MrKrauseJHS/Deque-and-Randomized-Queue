@@ -48,7 +48,21 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     @Override
     public Iterator<Item> iterator() {
         // TODO: Return an independent iterator that traverses the array items in random order.
+
+
         return null;
+    }
+    private class RandomizedQueueIterator implements Iterator<Item>{
+
+        @Override
+        public boolean hasNext() {
+            return false;
+        }
+
+        @Override
+        public Item next() {
+            return null;
+        }
     }
 
     /** Run unit tests for the randomized queue. */

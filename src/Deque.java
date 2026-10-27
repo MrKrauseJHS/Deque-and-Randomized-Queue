@@ -64,6 +64,19 @@ public class Deque<Item> implements Iterable<Item> {
         return null;
     }
 
+    private class DequeIterator implements Iterator<Item>{
+
+        @Override
+        public boolean hasNext() {
+            return false;
+        }
+
+        @Override
+        public Item next() {
+            return null;
+        }
+    }
+
     /** Run unit tests for the deque. */
     public static void main(String[] args) {
         // TODO: Add unit tests.
