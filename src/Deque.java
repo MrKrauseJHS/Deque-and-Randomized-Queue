@@ -65,7 +65,7 @@ public class Deque<Item> implements Iterable<Item> {
     }
 
     private class DequeIterator implements Iterator<Item>{
-
+        private Node current = head.next;
         @Override
         public boolean hasNext() {
             return false;

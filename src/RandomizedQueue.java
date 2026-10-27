@@ -53,7 +53,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         return null;
     }
     private class RandomizedQueueIterator implements Iterator<Item>{
-
+        private Item[] shuffledItems;
+        private int current;
         @Override
         public boolean hasNext() {
             return false;
